@@ -1,0 +1,8 @@
+prodlogs/
+target/
+*.iml
+*.ids
+*.iws
+*.ipr
+.idea/
+.DS_Store
