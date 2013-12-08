@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <annotation-driven />
+
+    <context:component-scan base-package="no.curiosity.general" />
+
+    <beans:bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <beans:property name="prefix" value="/WEB-INF/views/"/>
+        <beans:property name="suffix" value=".jsp"/>
+    </beans:bean>
+
+    <!-- Base Jawr config -->
+    <beans:bean abstract="true" id="jawrBase" class="net.jawr.web.servlet.JawrSpringController">
+        <!-- This must match the servlet-mapping to which the spring servlet is bound -->
+        <beans:property name="configLocation" value="/jawr.properties"/>
+        <beans:property name="mapping" value="/bundles/"/>
+    </beans:bean>
+
+    <!-- JS controller -->
+    <beans:bean id="jawrJsController" parent="jawrBase"/>
+
+    <!-- CSS controller -->
+    <beans:bean id="jawrCSSController" parent="jawrBase">
+        <beans:property name="type" value="css"/>
+    </beans:bean>
+
+    <!-- Needed for jersey and jawr -->
+    <beans:bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+    <beans:bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <beans:property name="alwaysUseFullPath" value="true"/>
+        <beans:property name="mappings">
+            <beans:props>
+                <beans:prop key="/**/*.js">jawrJsController</beans:prop>
+                <beans:prop key="/**/*.css">jawrCSSController</beans:prop>
+                <beans:prop key="/**/*.jpg">jawrCSSController</beans:prop>
+                <beans:prop key="/**/*.png">jawrCSSController</beans:prop>
+                <beans:prop key="/**/*.gif">jawrCSSController</beans:prop>
+            </beans:props>
+        </beans:property>
+    </beans:bean>
+</beans:beans>
