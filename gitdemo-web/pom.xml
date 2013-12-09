@@ -77,7 +77,7 @@
     </dependencies>
 
     <build>
-    <finalName>general</finalName>
+    <finalName>gitdemo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>

@@ -1,10 +1,10 @@
-package no.curiosity.general.controller;
+package no.curiosity.gitdemo.controller;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class GeneralControllerTest {
+public class GitdemoControllerTest {
     @Test
     public void test_something() {
         assertTrue(true);

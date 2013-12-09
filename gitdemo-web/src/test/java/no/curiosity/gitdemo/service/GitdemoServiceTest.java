@@ -1,10 +1,10 @@
-package no.curiosity.general.service;
+package no.curiosity.gitdemo.service;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class GeneralServiceTest {
+public class GitdemoServiceTest {
     @Test
     public void test_something() {
         assertTrue(true);

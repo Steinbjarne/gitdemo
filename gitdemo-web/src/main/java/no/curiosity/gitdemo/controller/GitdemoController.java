@@ -1,4 +1,4 @@
-package no.curiosity.general.controller;
+package no.curiosity.gitdemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ import static java.text.DateFormat.LONG;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
-public class GeneralController {
+public class GitdemoController {
 
     @RequestMapping(value = {"/", "/index.html"}, method = GET)
     public String processRequest(Locale locale, Model model) {

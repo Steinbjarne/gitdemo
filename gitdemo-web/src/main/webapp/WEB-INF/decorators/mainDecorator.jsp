@@ -5,11 +5,11 @@
 <html>
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>General</title>
+    <title>Gitdemo</title>
 
-    <jawr:style src="/bundle/general.css"/>
+    <jawr:style src="/bundle/gitdemo.css"/>
 
-    <jawr:script src="/bundle/general.js"/>
+    <jawr:script src="/bundle/gitdemo.js"/>
 
     <decorator:head/>
 </head>

@@ -1,7 +1,7 @@
-package no.curiosity.general.configuration;
+package no.curiosity.gitdemo.configuration;
 
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class GeneralConfiguration {
+public class GitdemoConfiguration {
 }
