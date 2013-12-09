@@ -4,16 +4,9 @@
 </head>
 <body>
     <div>
-        <p></p>
-    </div>
-    <div>
-        <div>
-            <p></p>
-        </div>
-        <div></div>
-    <div>
-        <p></p>
-        <P>The time on the server is ${serverTime}.</P>
+        <%--<P>The time on the server is ${serverTime}.</P>--%>
+
+        <p>Hello world</p>
     </div>
 </body>
 </html>
