@@ -4,15 +4,15 @@
 </head>
 <body>
     <div>
-        <p>Top</p>
+        <p></p>
     </div>
     <div>
         <div>
-            <p>Mid left</p>
+            <p></p>
         </div>
-        <div>Mid right</div>
+        <div></div>
     <div>
-        <p>Bottom</p>
+        <p></p>
         <P>The time on the server is ${serverTime}.</P>
     </div>
 </body>
