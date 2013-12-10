@@ -16,8 +16,8 @@ public class GitdemoController {
 
     @RequestMapping(value = {"/index.html"}, method = GET)
     public String processRequest(Locale locale, Model model) {
-//        Date date = new Date();
-//        DateFormat dateFormat = DateFormat.getDateTimeInstance(LONG, LONG,locale);
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(LONG, LONG,locale);
 //        String formattedDate = dateFormat.format(date);
 //        model.addAttribute("serverTime", formattedDate);
 
