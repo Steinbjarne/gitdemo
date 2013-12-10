@@ -11,12 +11,12 @@
         OS Version is ${systemProps.getProperty("os.version")}
         </p>
 
-        <%--<p>--%>
-        <%--<b>Java info</b><br/>--%>
-        <%--Java Vendor is ${systemProps.getProperty("java.vendor")}<br/>--%>
-        <%--Java Vendor URI ${systemProps.getProperty("java.vendor.uri")}<br/>--%>
-        <%--Java Version ${systemProps.getProperty("java.version")}<br/>--%>
-        <%--</p>--%>
+        <p>
+        <b>Java info</b><br/>
+        Java Vendor is ${systemProps.getProperty("java.vendor")}<br/>
+        Java Vendor URI ${systemProps.getProperty("java.vendor.uri")}<br/>
+        Java Version ${systemProps.getProperty("java.version")}<br/>
+        </p>
     </div>
 </body>
 </html>
