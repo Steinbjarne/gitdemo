@@ -4,12 +4,12 @@
 </head>
 <body>
     <div>
-        <%--<p>--%>
-        <%--<b>Operating system info</b></br>--%>
-        <%--OS Architecture is ${systemProps.getProperty("os.arch")}</br>--%>
-        <%--OS Name is ${systemProps.getProperty("os.name")}</br>--%>
-        <%--OS Version is ${systemProps.getProperty("os.version")}--%>
-        <%--</p>--%>
+        <p>
+        <b>Operating system info</b></br>
+        OS Architecture is ${systemProps.getProperty("os.arch")}</br>
+        OS Name is ${systemProps.getProperty("os.name")}</br>
+        OS Version is ${systemProps.getProperty("os.version")}
+        </p>
 
         <%--<p>--%>
         <%--<b>Java info</b><br/>--%>

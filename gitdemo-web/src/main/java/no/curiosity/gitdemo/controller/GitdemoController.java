@@ -26,8 +26,8 @@ public class GitdemoController {
 
     @RequestMapping(value = {"/sysprops.html"}, method = GET)
     public String processSysprops(Locale locale, Model model) {
-//        model.addAttribute("systemProps", System.getProperties());
-//
+        model.addAttribute("systemProps", System.getProperties());
+
         return "sysprops";
     }
 }
